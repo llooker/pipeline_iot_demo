@@ -1,4 +1,4 @@
-- dashboard: 1_facilities
+- dashboard: 1_facilities_overview
   title: "(1) Facilities Overview"
   layout: newspaper
   preferred_viewer: dashboards-next
@@ -21,7 +21,7 @@
       \ Overview\n\t</h1>\n</span>\n<span style=\"padding: 4px; float:right;\">\n\t\
       <a style=\"background-color: #fff; color: #5f6368; padding: 5px 10px;\" href=\"\
       https://keyerakaps.cloud.looker.com/boards/2\">Home</a>\n\t<a style=\"background-color:\
-      \ #fff; color: #5f6368; padding: 5px 10px;\" href=\"https://keyerakaps.cloud.looker.com/explore/pipeline/measurements\"\
+      \ #fff; color: #5f6368; padding: 5px 10px;\" href=\"https://keyerakaps.cloud.looker.com/explore/kaps-derived-tables-demo/measurements\"\
       >Explore</a>\n</span>\n\n<div>"
     row: 0
     col: 0
@@ -97,7 +97,7 @@
     custom_color: "#ffffff"
     single_value_title: Count of Devices
     conditional_formatting: [{type: not null, value: !!null '', background_color: "#333eb5",
-        font_color: "#ffffff", color_application: {collection_id: google, palette_id: google-sequential-0},
+        font_color: "#ffffff", color_application: {collection_id: keyera, palette_id: keyera-sequential-0},
         bold: false, italic: false, strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
@@ -138,7 +138,7 @@
     custom_color: "#ffffff"
     single_value_title: Count of Facilities
     conditional_formatting: [{type: not null, value: !!null '', background_color: "#333eb5",
-        font_color: "#ffffff", color_application: {collection_id: google, palette_id: google-sequential-0},
+        font_color: "#ffffff", color_application: {collection_id: keyera, palette_id: keyera-sequential-0},
         bold: false, italic: false, strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
