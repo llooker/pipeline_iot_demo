@@ -1,5 +1,5 @@
 view: gas_analysis_reports {
-  sql_table_name: `looker-private-demo.pipeline.gas_analysis_reports`
+  sql_table_name: `looker-private-demo.pipeline.gas_analysis_reports_2`
     ;;
   label: "Gas Analysis Reports"
 
