@@ -108,6 +108,7 @@ view: proving_reports {
     value_format_name: decimal_2
   }
 
+
   measure: count {
     hidden: yes
     label: "Count of Proving Reports"
