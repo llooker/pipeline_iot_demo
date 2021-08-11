@@ -97,7 +97,7 @@
     custom_color: "#ffffff"
     single_value_title: Count of Devices
     conditional_formatting: [{type: not null, value: !!null '', background_color: "#333eb5",
-        font_color: "#ffffff", color_application: {collection_id: keyera, palette_id: keyera-sequential-0},
+        font_color: "#ffffff", color_application: {collection_id: google, palette_id: google-sequential-0},
         bold: false, italic: false, strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
@@ -138,7 +138,7 @@
     custom_color: "#ffffff"
     single_value_title: Count of Facilities
     conditional_formatting: [{type: not null, value: !!null '', background_color: "#333eb5",
-        font_color: "#ffffff", color_application: {collection_id: keyera, palette_id: keyera-sequential-0},
+        font_color: "#ffffff", color_application: {collection_id: google, palette_id: google-sequential-0},
         bold: false, italic: false, strikethrough: false, fields: !!null ''}]
     series_types: {}
     defaults_version: 1
