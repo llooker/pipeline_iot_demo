@@ -2,9 +2,17 @@ view: paths {
   sql_table_name: `looker-private-demo.pipeline.paths`
     ;;
 
-  dimension: end_node {
+  dimension: start_node { #KET or #SGR
     type: string
-    sql: ${TABLE}.end_node ;;
+    sql: (CASE WHEN ${TABLE}.start_node='SGR' THEN 'Start Node A'
+    WHEN ${TABLE}.start_node='KET' THEN 'Start Node B' ELSE NULL END);;
+    full_suggestions: yes
+  }
+
+  dimension: end_node { #SGR or #Manifold
+    type: string
+    sql: (CASE WHEN ${TABLE}.end_node='SGR' THEN 'Start Node A'
+    WHEN ${TABLE}.end_node='Manifold' THEN 'Start Node C' ELSE NULL END);;
     full_suggestions: yes
   }
 
@@ -13,12 +21,6 @@ view: paths {
     label: "Equipment ID"
     type: string
     sql: ${TABLE}.equipmentId ;;
-    full_suggestions: yes
-  }
-
-  dimension: start_node {
-    type: string
-    sql: ${TABLE}.start_node ;;
     full_suggestions: yes
   }
 
