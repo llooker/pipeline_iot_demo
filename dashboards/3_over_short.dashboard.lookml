@@ -19,8 +19,8 @@
       margin-top:0;\n\t\tcolor: #6E6E6E; \n\tline-height: 1.2rem;\">\n\t\tPipeline\
       \ Analysis \n\t</h1>\n</span>\n<span style=\"padding: 4px; float:right;\">\n\
       \t<a style=\"background-color: #fff; color: #5f6368; padding: 5px 10px;\" href=\"\
-      https://keyerakaps.cloud.looker.com/boards/2\">Home</a>\n\t<a style=\"background-color:\
-      \ #fff; color: #5f6368; padding: 5px 10px;\" href=\"https://keyerakaps.cloud.looker.com/explore/kaps-derived-tables-demo/measurements\"\
+      https://demoexpo.looker.com/folders/986\">Home</a>\n\t<a style=\"background-color:\
+      \ #fff; color: #5f6368; padding: 5px 10px;\" href=\"https://demoexpo.looker.com/explore/pipeline/measurements\"\
       >Explore</a>\n</span>\n\n<div>"
     row: 0
     col: 0
@@ -120,8 +120,8 @@
     show_null_points: true
     interpolation: linear
     color_application:
-      collection_id: keyera
-      palette_id: keyera-categorical-0
+      collection_id: google
+      palette_id: google-categorical-0
       options:
         steps: 5
         reverse: false
@@ -259,7 +259,7 @@
       measurements.total_value:
         is_active: false
     conditional_formatting: [{type: along a scale..., value: !!null '', background_color: "#E8710A",
-        font_color: !!null '', color_application: {collection_id: keyera, palette_id: keyera-diverging-0,
+        font_color: !!null '', color_application: {collection_id: google, palette_id: google-diverging-0,
           options: {steps: 5, constraints: {min: {type: minimum}, mid: {type: number,
                 value: 0}, max: {type: maximum}}, mirror: true, reverse: true, stepped: true}},
         bold: false, italic: false, strikethrough: false, fields: !!null ''}]
@@ -315,8 +315,8 @@
       margin-top:0;\n\t\tcolor: #6E6E6E; \n\tline-height: 1.2rem;\">\n\t\tFacility\
       \ Density Measurements\n\t</h1>\n</span>\n<span style=\"padding: 4px; float:right;\"\
       >\n\t<a style=\"background-color: #fff; color: #5f6368; padding: 5px 10px;\"\
-      \ href=\"https://keyerakaps.cloud.looker.com/boards/2\">Home</a>\n\t<a style=\"\
-      background-color: #fff; color: #5f6368; padding: 5px 10px;\" href=\"https://keyerakaps.cloud.looker.com/explore/kaps-derived-tables-demo/measurements\"\
+      \ href=\"https://demoexpo.looker.com/folders/986\">Home</a>\n\t<a style=\"\
+      background-color: #fff; color: #5f6368; padding: 5px 10px;\" href=\"https://demoexpo.looker.com/explore/pipeline/measurements\"\
       >Explore</a>\n</span>\n\n<div>"
     row: 41
     col: 0
@@ -427,8 +427,8 @@
       measurements.total_density:
         is_active: true
         palette:
-          palette_id: keyera-sequential-0
-          collection_id: keyera
+          palette_id: google-sequential-0
+          collection_id: google
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_y_axis_labels: true
@@ -520,8 +520,8 @@
       measurements.total_density:
         is_active: true
         palette:
-          palette_id: keyera-sequential-0
-          collection_id: keyera
+          palette_id: google-sequential-0
+          collection_id: google
     table_theme: white
     enable_conditional_formatting: false
     header_text_alignment: left

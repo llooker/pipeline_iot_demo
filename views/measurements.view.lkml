@@ -116,8 +116,7 @@ view: measurements {
     ELSE 0 END;;
     action: {
       label: "Change Density Value"
-      url: "https://us-central1-sandbox-keyera-poc.cloudfunctions.net/edit_measurements"
-      # url: "https://webhook.site/63af94f6-20bc-458b-9c75-6e1c9e5bbc89"   ## test link
+      url: "https://webhook.site/63af94f6-20bc-458b-9c75-6e1c9e5bbc89"   ## test link
       param: {
         name: "User"
         value: "{{ _user_attributes['first_name'] }}"

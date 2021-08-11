@@ -19,11 +19,11 @@
       margin-top:0;\n\t\tcolor: #6E6E6E; \n\tline-height: 1.2rem;\">\n\t\tRollups\
       \ - Month, Week, Day, Hour, Minute \n\t</h1>\n</span>\n<span style=\"padding:\
       \ 4px; float:right;\">\n\t<a style=\"background-color: #fff; color: #5f6368;\
-      \ padding: 5px 10px;\" href=\"https://keyerakaps.cloud.looker.com/boards/2\"\
+      \ padding: 5px 10px;\" href=\"https://demoexpo.looker.com/folders/986\"\
       >Home</a>\n\t<a style=\"background-color: #fff; color: #5f6368; padding: 5px\
-      \ 10px;\" href=\"https://keyerakaps.cloud.looker.com/explore/kaps-derived-tables-demo/measurements\"\
+      \ 10px;\" href=\"https://demoexpo.looker.com/explore/pipeline/measurements\"\
       >Explore</a>\n\t<a style=\"background-color: #fff; color: #5f6368; padding:\
-      \ 5px 10px;\" href=\"https://keyerakaps.cloud.looker.com/dashboards-next/12?Facility+Name=Facility+A\"\
+      \ 5px 10px;\" href=\"https://demoexpo.looker.com/dashboards-next/1230?Facility+Name=Facility+A\"\
       >Go Back to Facilities Overview</a>\n</span>\n\n<div>"
     row: 0
     col: 0
