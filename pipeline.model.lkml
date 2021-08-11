@@ -46,6 +46,7 @@ explore: measurements {
 }
 
 explore: gas_analysis_reports {
+  from: gas_analysis_reports
   label: "Gas Analysis Reports"
 }
 

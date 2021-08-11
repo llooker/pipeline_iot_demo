@@ -819,49 +819,49 @@
     col: 0
     width: 24
     height: 3
-  - title: Gas Analysis Report
-    name: Gas Analysis Report
-    model: pipeline
-    explore: gas_analysis_reports
-    type: looker_grid
-    fields: [gas_analysis_reports.laboratory, gas_analysis_reports.date_reported_date,
-      gas_analysis_reports.date_sampled_date, gas_analysis_reports.sample_id, gas_analysis_reports.validator_id,
-      gas_analysis_reports.equipment_id, gas_analysis_reports.sample_density, gas_analysis_reports.mol_fractions__c5,
-      gas_analysis_reports.mol_fractions__co2, gas_analysis_reports.mol_fractions__h2,
-      gas_analysis_reports.mol_fractions__n2, gas_analysis_reports.report_url_clean,
-      gas_analysis_reports.comments]
-    sorts: [gas_analysis_reports.report_url_clean]
-    limit: 500
-    query_timezone: UTC
-    show_view_names: false
-    show_row_numbers: true
-    transpose: false
-    truncate_text: false
-    hide_totals: false
-    hide_row_totals: false
-    size_to_fit: true
-    table_theme: white
-    limit_displayed_rows: false
-    enable_conditional_formatting: false
-    header_text_alignment: left
-    header_font_size: '12'
-    rows_font_size: '12'
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    show_sql_query_menu_options: false
-    show_totals: true
-    show_row_totals: true
-    header_font_color: "#030303"
-    header_background_color: "#F9AB00"
-    defaults_version: 1
-    note_state: expanded
-    note_display: above
-    note_text: 'Recommended Action: Click Report URL to View PDF Report'
-    listen: {}
-    row: 55
-    col: 0
-    width: 24
-    height: 5
+  # - title: Gas Analysis Report
+  #   name: Gas Analysis Report
+  #   model: pipeline
+  #   explore: gas_analysis_reports
+  #   type: looker_grid
+  #   fields: [gas_analysis_reports.laboratory, gas_analysis_reports.date_reported_date,
+  #     gas_analysis_reports.date_sampled_date, gas_analysis_reports.sample_id, gas_analysis_reports.validator_id,
+  #     gas_analysis_reports.equipment_id, gas_analysis_reports.sample_density, gas_analysis_reports.mol_fractions__c5,
+  #     gas_analysis_reports.mol_fractions__co2, gas_analysis_reports.mol_fractions__h2,
+  #     gas_analysis_reports.mol_fractions__n2, gas_analysis_reports.report_url_clean,
+  #     gas_analysis_reports.comments]
+  #   sorts: [gas_analysis_reports.report_url_clean]
+  #   limit: 500
+  #   query_timezone: UTC
+  #   show_view_names: false
+  #   show_row_numbers: true
+  #   transpose: false
+  #   truncate_text: false
+  #   hide_totals: false
+  #   hide_row_totals: false
+  #   size_to_fit: true
+  #   table_theme: white
+  #   limit_displayed_rows: false
+  #   enable_conditional_formatting: false
+  #   header_text_alignment: left
+  #   header_font_size: '12'
+  #   rows_font_size: '12'
+  #   conditional_formatting_include_totals: false
+  #   conditional_formatting_include_nulls: false
+  #   show_sql_query_menu_options: false
+  #   show_totals: true
+  #   show_row_totals: true
+  #   header_font_color: "#030303"
+  #   header_background_color: "#F9AB00"
+  #   defaults_version: 1
+  #   note_state: expanded
+  #   note_display: above
+  #   note_text: 'Recommended Action: Click Report URL to View PDF Report'
+  #   listen: {}
+  #   row: 55
+  #   col: 0
+  #   width: 24
+  #   height: 5
   - title: Flow Rate vs Proving Report Frequency - Sample Device M-7752
     name: Flow Rate vs Proving Report Frequency - Sample Device M-7752
     model: alerting
