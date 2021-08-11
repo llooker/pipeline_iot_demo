@@ -87,7 +87,7 @@ view: proving_reports {
 
   dimension: proving_report_yn {
     #hidden: yes
-    type: string
+    type: number
     sql: CASE WHEN ${timestamp_raw} IS NOT NULL THEN 1 ELSE NULL END;;
   }
 
