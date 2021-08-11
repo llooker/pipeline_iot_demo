@@ -22,8 +22,8 @@
       >Home</a>\n\t<a style=\"background-color: #fff; color: #5f6368; padding: 5px\
       \ 10px;\" href=\"https://demoexpo.looker.com/explore/pipeline/measurements\"\
       >Explore</a>\n\t<a style=\"background-color: #fff; color: #5f6368; padding:\
-      \ 5px 10px;\" href=\"https://demoexpo.looker.com/dashboards-next/1230?Facility+Name=Facility+A\"\
-      >Go Back to Facilities Overview</a>\n</span>\n\n<div>"
+      \ 5px 10px;\" href=\"https://demoexpo.looker.com/dashboards-next/1230\">Go Back\
+      \ to Facilities Overview</a>\n</span>\n\n<div>"
     row: 0
     col: 0
     width: 24
@@ -697,7 +697,6 @@
   - name: " (2)"
     type: text
     title_text: ''
-    subtitle_text: ''
     body_text: |2
 
       <h1 style="margin-top:20px; padding: 5px; border-bottom: solid 1px black; height: 60px; color: black; text-align: center;">Volume Measurements</h1>
@@ -708,7 +707,6 @@
   - name: " (3)"
     type: text
     title_text: ''
-    subtitle_text: ''
     body_text: |2
 
       <h1 style="margin-top:20px; padding: 5px; border-bottom: solid 1px black; height: 60px; color: black; text-align: center;">Flow Rate Measurements</h1>
@@ -719,7 +717,6 @@
   - name: " (4)"
     type: text
     title_text: ''
-    subtitle_text: ''
     body_text: |2
 
       <h1 style="margin-top:20px; padding: 5px; border-bottom: solid 1px black; height: 60px; color: black; text-align: center;">Density Measurements</h1>
@@ -815,7 +812,6 @@
   - name: " (5)"
     type: text
     title_text: ''
-    subtitle_text: ''
     body_text: |2
 
       <h1 style="margin-top:20px; padding: 5px; border-bottom: solid 1px black; height: 60px; color: black; text-align: center;">Lab Sample Reports & Proving Reports</h1>

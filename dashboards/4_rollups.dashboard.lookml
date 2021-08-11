@@ -17,14 +17,14 @@
       16px\" src=\"https://storage.googleapis.com/brechtv/Looker_Favicon_32x32%403x.png\"\
       />\n</span>\n\n<span style=\"\n\tpadding: 4px; \n\tfloat:left;\">\n\t<h1 style=\"\
       margin-top:0;\n\t\tcolor: #6E6E6E; \n\tline-height: 1.2rem;\">\n\t\tRollups\
-      \ - Month, Week, Day, Hour, Minute \n\t</h1>\n</span>\n<span style=\"padding:\
+      \ - Month, Week, Day, Hour, Minute\n\t</h1>\n</span>\n<span style=\"padding:\
       \ 4px; float:right;\">\n\t<a style=\"background-color: #fff; color: #5f6368;\
-      \ padding: 5px 10px;\" href=\"https://demoexpo.looker.com/folders/986\"\
-      >Home</a>\n\t<a style=\"background-color: #fff; color: #5f6368; padding: 5px\
-      \ 10px;\" href=\"https://demoexpo.looker.com/explore/pipeline/measurements\"\
-      >Explore</a>\n\t<a style=\"background-color: #fff; color: #5f6368; padding:\
-      \ 5px 10px;\" href=\"https://demoexpo.looker.com/dashboards-next/1230?Facility+Name=Facility+A\"\
-      >Go Back to Facilities Overview</a>\n</span>\n\n<div>"
+      \ padding: 5px 10px;\" href=\"https://demoexpo.looker.com/folders/986\">Home</a>\n\
+      \t<a style=\"background-color: #fff; color: #5f6368; padding: 5px 10px;\" href=\"\
+      https://demoexpo.looker.com/explore/pipeline/measurements\">Explore</a>\n\t\
+      <a style=\"background-color: #fff; color: #5f6368; padding: 5px 10px;\" href=\"\
+      https://demoexpo.looker.com/dashboards-next/1230\">Go Back to Facilities Overview</a>\n\
+      </span>\n\n<div>"
     row: 0
     col: 0
     width: 24
@@ -278,7 +278,7 @@
   - name: Timestamp Date
     title: Timestamp Date
     type: field_filter
-    default_value: 4 week
+    default_value: 2021/08/01 to 2021/08/07
     allow_multiple_values: true
     required: false
     ui_config:

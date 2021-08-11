@@ -2,7 +2,7 @@
   title: "(1) Facilities Overview"
   layout: newspaper
   preferred_viewer: dashboards-next
-  refresh: 1 minute
+  refresh: 1000 minutes
   elements:
   - name: ''
     type: text
@@ -60,8 +60,8 @@
     show_legend: true
     quantize_map_value_colors: false
     reverse_map_value_colors: false
-    map_latitude: 53.66498480009958
-    map_longitude: -113.20999145507814
+    map_latitude: 43.77605194348484
+    map_longitude: -79.12490844726564
     map_zoom: 9
     map_marker_radius_fixed: 50
     map_marker_color: ["#333eb5"]
@@ -355,7 +355,6 @@
   - name: 'Recommended Action:'
     type: text
     title_text: 'Recommended Action:'
-    subtitle_text: ''
     body_text: "<center> Set Alerts based on desired threshold criteria by selecting\
       \ the bell icon in the upper right corner of any tile"
     row: 2
@@ -365,7 +364,6 @@
   - name: 'Recommended Action: (2)'
     type: text
     title_text: 'Recommended Action:'
-    subtitle_text: ''
     body_text: "<center> Make selections at the top to adjust filters across the dashboard"
     row: 2
     col: 0
@@ -395,7 +393,7 @@
     target_gap: 10
     target_weight: 25
     range_min: 0
-    range_max:
+    range_max: 0
     value_label_type: dboth
     value_label_font: 9
     value_label_padding: 45
@@ -403,14 +401,13 @@
     target_label_type: nolabel
     target_label_font: 3
     label_font_size: 3
-    spinner_type: needle
     fill_color: "#EA4335"
     background_color: "#CECECE"
     spinner_color: "#282828"
     range_color: "#030303"
     gauge_fill_type: segment
     fill_colors: ["#EE7772", "#ffed6f", "#7FCDAE"]
-    viz_trellis_by: row
+    trellis_by: row
     trellis_rows: 2
     trellis_cols: 3
     angle: 90
@@ -418,6 +415,8 @@
     range_x: 0.7
     range_y: 1.1
     target_label_padding: 1.06
+    spinner_type: needle
+    viz_trellis_by: row
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_y_axis_labels: true
