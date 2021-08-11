@@ -1,4 +1,4 @@
-- dashboard: 1_facilities_overview
+- dashboard: 1_facilities
   title: "(1) Facilities Overview"
   layout: newspaper
   preferred_viewer: dashboards-next
