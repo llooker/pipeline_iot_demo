@@ -44,3 +44,17 @@ explore: measurements {
   #   sql_on: ${volume_delta_view.sensor_id} = ${sensors.sensor_id} ;;
   # }
 }
+
+explore: gas_analysis_reports {
+  label: "Gas Analysis Reports"
+}
+
+explore: data_revisions {
+  hidden: yes
+  persist_for: "0 seconds"
+}
+
+explore: volume_delta_view {
+  persist_for: "0 seconds"
+  hidden: yes
+}

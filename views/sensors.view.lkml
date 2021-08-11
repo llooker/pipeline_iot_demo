@@ -24,26 +24,26 @@ view: sensors {
 
     link: {
       label: "{{value}} Device Summary Dashboard"
-      url: "https://keyerakaps.cloud.looker.com/dashboards-next/13?Device%20ID={{ value | encode_uri }}"
+      url: "https://demoexpo.looker.com/dashboards-next/1231?Device%20ID={{ value | encode_uri }}"
       icon_url: "http://www.looker.com/favicon.ico"
     }
 
     link: {
       label: "View Latest Sample Lab Results"
-      url: "https://storage.cloud.google.com/looker_demo_items/Dummy%20Lab%20PDFs_New.pdf"
+      url: "https://storage.cloud.google.com/pipeline_demo_1/Dummy%20Lab%20PDFs_New.pdf"
       icon_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/833px-PDF_file_icon.svg.png"
     }
 
     link: {
       label: "View Device Manual"
-      url: "https://storage.cloud.google.com/looker_demo_items/device_manual_FlowX%20v.3.2.1.pdf"
+      url: "https://storage.cloud.google.com/pipeline_demo_1/device_manual_FlowX%20v.3.2.1.pdf"
       icon_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/833px-PDF_file_icon.svg.png"
     }
 
     action: {
       label: "Submit Work Order"
       url: "https://desolate-refuge-53336.herokuapp.com/posts"
-      icon_url: "https://media.glassdoor.com/sqll/373298/keyera-squarelogo-1438175494826.png"
+      icon_url: "http://www.looker.com/favicon.ico"
       param: {
         name: "some_auth_code"
         value: "abc123456"
@@ -77,11 +77,11 @@ view: sensors {
     hidden: yes
     type: string
     sql: CASE
-         WHEN ${sensor_id} LIKE '%M-8620%' THEN 'https://storage.cloud.google.com/looker_demo_items/device_4_omni.jpeg'
-         WHEN ${sensor_id} LIKE '%M-8610%' THEN 'https://storage.cloud.google.com/looker_demo_items/device_1_control_wave'
-         WHEN ${sensor_id} LIKE '%M-7762%' THEN 'https://storage.cloud.google.com/looker_demo_items/device_2_logix.jpeg'
-         WHEN ${sensor_id} LIKE '%M-7752%' THEN 'https://storage.cloud.google.com/looker_demo_items/device_3_spirit_v2.png'
-         WHEN ${sensor_id} LIKE '%M-1220-C4%' THEN 'https://storage.cloud.google.com/looker_demo_items/device_5_emerson.jpeg' ELSE 'Other' END ;;
+         WHEN ${sensor_id} LIKE '%M-8620%' THEN 'https://storage.cloud.google.com/pipeline_demo_1/device_4_omni.jpeg'
+         WHEN ${sensor_id} LIKE '%M-8610%' THEN 'https://storage.cloud.google.com/pipeline_demo_1/device_1_control_wave%20(2)'
+         WHEN ${sensor_id} LIKE '%M-7762%' THEN 'https://storage.cloud.google.com/pipeline_demo_1/device_2_logix.jpeg'
+         WHEN ${sensor_id} LIKE '%M-7752%' THEN 'https://storage.cloud.google.com/pipeline_demo_1/device_3_spirit_v2.png'
+         WHEN ${sensor_id} LIKE '%M-1220-C4%' THEN 'https://storage.cloud.google.com/pipeline_demo_1/device_5_emerson.jpeg' ELSE 'Other' END ;;
   }
 
   dimension: sensor_image {
@@ -180,11 +180,11 @@ view: sensors {
     hidden: yes
     type: string
     sql: CASE
-         WHEN ${sensor_id} LIKE '%M-8620%' THEN 'https://storage.cloud.google.com/looker_demo_items/sample_1.png'
-         WHEN ${sensor_id} LIKE '%M-8610%' THEN 'https://storage.cloud.google.com/looker_demo_items/sample_2.png'
-         WHEN ${sensor_id} LIKE '%M-7762%' THEN 'https://storage.cloud.google.com/looker_demo_items/sample_3.png'
-         WHEN ${sensor_id} LIKE '%M-7752%' THEN 'https://storage.cloud.google.com/looker_demo_items/sample_1.png'
-         WHEN ${sensor_id} LIKE '%M-1220-C4%' THEN 'https://storage.cloud.google.com/looker_demo_items/sample_2.png' ELSE NULL END ;;
+         WHEN ${sensor_id} LIKE '%M-8620%' THEN 'https://storage.cloud.google.com/pipeline_demo_1/sample_1.png'
+         WHEN ${sensor_id} LIKE '%M-8610%' THEN 'https://storage.cloud.google.com/pipeline_demo_1/sample_2.png'
+         WHEN ${sensor_id} LIKE '%M-7762%' THEN 'https://storage.cloud.google.com/pipeline_demo_1/sample_3.png'
+         WHEN ${sensor_id} LIKE '%M-7752%' THEN 'https://storage.cloud.google.com/pipeline_demo_1/sample_1.png'
+         WHEN ${sensor_id} LIKE '%M-1220-C4%' THEN 'https://storage.cloud.google.com/pipeline_demo_1/sample_2.png' ELSE NULL END ;;
   }
 
   dimension: sensor_sample_lab_results_image {
@@ -200,7 +200,7 @@ view: sensors {
     sql: ${sensor_id_clean} || " | " || ${paths.facility_name} ;;
     link: {
       label: "View Device Manual"
-      url: "https://storage.cloud.google.com/looker_demo_items/device_manual_FlowX%20v.3.2.1.pdf"
+      url: "https://storage.cloud.google.com/pipeline_demo_1/device_manual_FlowX%20v.3.2.1.pdf"
       icon_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/833px-PDF_file_icon.svg.png"
     }
   }
