@@ -7,7 +7,7 @@ include: "/**/*.dashboard"   # include a LookML dashboard called my_dashboard
 explore: measurements {
   label: "Pipeline Measurements"
 
-  #persist_for: "0 seconds"
+  persist_for: "24 hours"
   join: sensors {
     view_label: "Devices"
     relationship: many_to_one
