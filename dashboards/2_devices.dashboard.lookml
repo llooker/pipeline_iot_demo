@@ -81,7 +81,7 @@
       Timestamp Date: measurements.timestamp_date
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
-    row: 17
+    row: 18
     col: 4
     width: 20
     height: 6
@@ -140,7 +140,7 @@
       Timestamp Date: measurements.timestamp_date
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
-    row: 35
+    row: 36
     col: 4
     width: 20
     height: 6
@@ -200,7 +200,7 @@
       Timestamp Date: measurements.timestamp_date
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
-    row: 26
+    row: 27
     col: 4
     width: 20
     height: 6
@@ -231,7 +231,7 @@
       Timestamp Date: measurements.timestamp_date
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
-    row: 19
+    row: 20
     col: 0
     width: 4
     height: 2
@@ -263,7 +263,7 @@
       Timestamp Date: measurements.timestamp_date
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
-    row: 21
+    row: 22
     col: 0
     width: 4
     height: 2
@@ -294,7 +294,7 @@
       Timestamp Date: measurements.timestamp_date
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
-    row: 17
+    row: 18
     col: 0
     width: 4
     height: 2
@@ -357,7 +357,7 @@
       Timestamp Date: measurements.timestamp_date
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
-    row: 26
+    row: 27
     col: 0
     width: 4
     height: 3
@@ -388,7 +388,7 @@
       Timestamp Date: measurements.timestamp_date
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
-    row: 29
+    row: 30
     col: 0
     width: 4
     height: 3
@@ -418,7 +418,7 @@
       Timestamp Date: measurements.timestamp_date
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
-    row: 37
+    row: 38
     col: 0
     width: 4
     height: 2
@@ -448,7 +448,7 @@
       Timestamp Date: measurements.timestamp_date
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
-    row: 39
+    row: 40
     col: 0
     width: 4
     height: 2
@@ -478,7 +478,7 @@
       Timestamp Date: measurements.timestamp_date
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
-    row: 35
+    row: 36
     col: 0
     width: 4
     height: 2
@@ -559,7 +559,7 @@
     row: 2
     col: 8
     width: 9
-    height: 12
+    height: 13
   - title: Device Image (Copy)
     name: Device Image (Copy)
     model: pipeline
@@ -700,7 +700,7 @@
     body_text: |2
 
       <h1 style="margin-top:20px; padding: 5px; border-bottom: solid 1px black; height: 60px; color: black; text-align: center;">Volume Measurements</h1>
-    row: 23
+    row: 24
     col: 0
     width: 24
     height: 3
@@ -710,7 +710,7 @@
     body_text: |2
 
       <h1 style="margin-top:20px; padding: 5px; border-bottom: solid 1px black; height: 60px; color: black; text-align: center;">Flow Rate Measurements</h1>
-    row: 32
+    row: 33
     col: 0
     width: 24
     height: 3
@@ -720,7 +720,7 @@
     body_text: |2
 
       <h1 style="margin-top:20px; padding: 5px; border-bottom: solid 1px black; height: 60px; color: black; text-align: center;">Density Measurements</h1>
-    row: 14
+    row: 15
     col: 0
     width: 24
     height: 3
@@ -743,177 +743,32 @@
     row: 2
     col: 17
     width: 7
-    height: 12
-  - title: Proving Report Summary
-    name: Proving Report Summary
-    model: alerting
-    explore: measurements
-    type: looker_grid
-    fields: [sensors.sensor_id_clean, measurements.timestamp_minute, proving_reports.flagged,
-      proving_reports.meter_factor, proving_reports.temperature, proving_reports.color_code,
-      proving_reports.cause]
-    filters:
-      measurements.density_unit_conversion: kg
-      proving_reports.meter_factor: NOT NULL
-    sorts: [sensors.sensor_id_clean]
-    limit: 500
-    query_timezone: UTC
-    show_view_names: false
-    show_row_numbers: true
-    transpose: false
-    truncate_text: false
-    hide_totals: false
-    hide_row_totals: false
-    size_to_fit: true
-    table_theme: white
-    limit_displayed_rows: false
-    enable_conditional_formatting: false
-    header_text_alignment: left
-    header_font_size: '12'
-    rows_font_size: '12'
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    show_sql_query_menu_options: false
-    show_totals: true
-    show_row_totals: true
-    header_background_color: "#F9AB00"
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    y_axis_scale_mode: linear
-    x_axis_reversed: false
-    y_axis_reversed: false
-    plot_size_by_field: false
-    trellis: ''
-    stacking: ''
-    legend_position: center
-    point_style: none
-    show_value_labels: false
-    label_density: 25
-    x_axis_scale: auto
-    y_axis_combined: true
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
-    defaults_version: 1
-    series_types: {}
-    listen: {}
-    row: 51
-    col: 0
-    width: 24
-    height: 4
+    height: 13
   - name: " (5)"
     type: text
     title_text: ''
     body_text: |2
 
       <h1 style="margin-top:20px; padding: 5px; border-bottom: solid 1px black; height: 60px; color: black; text-align: center;">Lab Sample Reports & Proving Reports</h1>
-    row: 41
+    row: 42
     col: 0
     width: 24
     height: 3
-  # - title: Gas Analysis Report
-  #   name: Gas Analysis Report
-  #   model: pipeline
-  #   explore: gas_analysis_reports
-  #   type: looker_grid
-  #   fields: [gas_analysis_reports.laboratory, gas_analysis_reports.date_reported_date,
-  #     gas_analysis_reports.date_sampled_date, gas_analysis_reports.sample_id, gas_analysis_reports.validator_id,
-  #     gas_analysis_reports.equipment_id, gas_analysis_reports.sample_density, gas_analysis_reports.mol_fractions__c5,
-  #     gas_analysis_reports.mol_fractions__co2, gas_analysis_reports.mol_fractions__h2,
-  #     gas_analysis_reports.mol_fractions__n2, gas_analysis_reports.report_url_clean,
-  #     gas_analysis_reports.comments]
-  #   sorts: [gas_analysis_reports.report_url_clean]
-  #   limit: 500
-  #   query_timezone: UTC
-  #   show_view_names: false
-  #   show_row_numbers: true
-  #   transpose: false
-  #   truncate_text: false
-  #   hide_totals: false
-  #   hide_row_totals: false
-  #   size_to_fit: true
-  #   table_theme: white
-  #   limit_displayed_rows: false
-  #   enable_conditional_formatting: false
-  #   header_text_alignment: left
-  #   header_font_size: '12'
-  #   rows_font_size: '12'
-  #   conditional_formatting_include_totals: false
-  #   conditional_formatting_include_nulls: false
-  #   show_sql_query_menu_options: false
-  #   show_totals: true
-  #   show_row_totals: true
-  #   header_font_color: "#030303"
-  #   header_background_color: "#F9AB00"
-  #   defaults_version: 1
-  #   note_state: expanded
-  #   note_display: above
-  #   note_text: 'Recommended Action: Click Report URL to View PDF Report'
-  #   listen: {}
-  #   row: 55
-  #   col: 0
-  #   width: 24
-  #   height: 5
-  - title: Flow Rate vs Proving Report Frequency - Sample Device M-7752
-    name: Flow Rate vs Proving Report Frequency - Sample Device M-7752
-    model: alerting
-    explore: measurements
-    type: looker_line
-    fields: [proving_reports.proving_report_occurence, measurements.timestamp_date,
-      measurements.flow_rate_mean]
-    filters:
-      measurements.density_unit_conversion: kg
-      measurements.timestamp_date: 20 days
-      sensors.sensor_id_clean: M-7752
-    sorts: [measurements.timestamp_date desc]
+  - title: Gas Analysis Report
+    name: Gas Analysis Report
+    model: pipeline
+    explore: gas_analysis_reports
+    type: looker_grid
+    fields: [gas_analysis_reports.laboratory, gas_analysis_reports.date_reported_date,
+      gas_analysis_reports.date_sampled_date, gas_analysis_reports.sample_id, gas_analysis_reports.validator_id,
+      gas_analysis_reports.equipment_id, gas_analysis_reports.sample_density, gas_analysis_reports.mol_fractions_c5,
+      gas_analysis_reports.mol_fractions_co2, gas_analysis_reports.mol_fractions_h2,
+      gas_analysis_reports.mol_fractions_n2, gas_analysis_reports.report_url_clean,
+      gas_analysis_reports.comments]
+    sorts: [gas_analysis_reports.report_url_clean]
     limit: 500
     query_timezone: UTC
-    x_axis_gridlines: false
-    y_axis_gridlines: true
     show_view_names: false
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    y_axis_scale_mode: linear
-    x_axis_reversed: false
-    y_axis_reversed: false
-    plot_size_by_field: false
-    trellis: ''
-    stacking: ''
-    limit_displayed_rows: false
-    legend_position: center
-    point_style: none
-    show_value_labels: false
-    label_density: 25
-    x_axis_scale: auto
-    y_axis_combined: true
-    show_null_points: false
-    interpolation: linear
-    y_axes: [{label: '', orientation: left, series: [{axisId: measurements.flow_rate_mean,
-            id: measurements.flow_rate_mean, name: Flow Rate Mean}], showLabels: true,
-        showValues: true, unpinAxis: true, tickDensity: default, type: linear}, {
-        label: !!null '', orientation: right, series: [{axisId: proving_reports.proving_report_occurence,
-            id: proving_reports.proving_report_occurence, name: Proving Report Occurence}],
-        showLabels: true, showValues: false, unpinAxis: false, tickDensity: default,
-        tickDensityCustom: 5, type: linear}]
-    size_by_field: proving_reports.proving_report_occurence
-    series_types:
-      proving_reports.proving_report_occurence: scatter
-    series_colors:
-      proving_reports.proving_report_occurence: "#333eb5"
-    swap_axes: false
-    discontinuous_nulls: true
     show_row_numbers: true
     transpose: false
     truncate_text: false
@@ -921,6 +776,7 @@
     hide_row_totals: false
     size_to_fit: true
     table_theme: white
+    limit_displayed_rows: false
     enable_conditional_formatting: false
     header_text_alignment: left
     header_font_size: '12'
@@ -930,19 +786,17 @@
     show_sql_query_menu_options: false
     show_totals: true
     show_row_totals: true
+    header_font_color: "#030303"
     header_background_color: "#F9AB00"
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
     defaults_version: 1
-    hidden_fields: []
+    note_state: expanded
+    note_display: above
+    note_text: 'Recommended Action: Click Report URL to View PDF Report'
     listen: {}
-    row: 44
+    row: 52
     col: 0
     width: 24
-    height: 7
+    height: 9
   - title: Device Inspection Status - Days Remaining
     name: Device Inspection Status - Days Remaining
     model: pipeline
@@ -1025,7 +879,62 @@
     row: 9
     col: 0
     width: 8
-    height: 5
+    height: 6
+  - title: Flow Rate vs Proving Report Frequency
+    name: Flow Rate vs Proving Report Frequency
+    model: pipeline
+    explore: measurements
+    type: looker_line
+    fields: [measurements.timestamp_date, proving_reports.proving_report_occurence,
+      measurements.flow_rate_mean]
+    fill_fields: [measurements.timestamp_date]
+    filters:
+      measurements.timestamp_date: 2021/07/25 to 2021/08/07
+    sorts: [measurements.timestamp_date]
+    limit: 500
+    query_timezone: America/Los_Angeles
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: center
+    point_style: circle
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    show_null_points: false
+    interpolation: linear
+    y_axes: [{label: '', orientation: left, series: [{axisId: proving_reports.proving_report_occurence,
+            id: proving_reports.proving_report_occurence, name: Proving Report Occurence}],
+        showLabels: false, showValues: false, unpinAxis: false, tickDensity: default,
+        tickDensityCustom: 5, type: linear}, {label: !!null '', orientation: right,
+        series: [{axisId: measurements.flow_rate_mean, id: measurements.flow_rate_mean,
+            name: Flow Rate Mean}], showLabels: true, showValues: true, unpinAxis: true,
+        tickDensity: default, tickDensityCustom: 5, type: linear}]
+    size_by_field: proving_reports.proving_report_occurence
+    series_types:
+      proving_reports.proving_report_occurence: scatter
+    discontinuous_nulls: true
+    defaults_version: 1
+    hidden_fields: []
+    listen: {}
+    row: 45
+    col: 0
+    width: 24
+    height: 7
   filters:
   - name: Timestamp Date
     title: Timestamp Date
