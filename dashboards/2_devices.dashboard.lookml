@@ -761,9 +761,9 @@
     type: looker_grid
     fields: [gas_analysis_reports.laboratory, gas_analysis_reports.date_reported_date,
       gas_analysis_reports.date_sampled_date, gas_analysis_reports.sample_id, gas_analysis_reports.validator_id,
-      gas_analysis_reports.equipment_id, gas_analysis_reports.sample_density, gas_analysis_reports.mol_fractions_c5,
-      gas_analysis_reports.mol_fractions_co2, gas_analysis_reports.mol_fractions_h2,
-      gas_analysis_reports.mol_fractions_n2, gas_analysis_reports.report_url_clean,
+      gas_analysis_reports.equipment_id, gas_analysis_reports.sample_density, gas_analysis_reports.mol_fractions__c5,
+      gas_analysis_reports.mol_fractions__co2, gas_analysis_reports.mol_fractions__h2,
+      gas_analysis_reports.mol_fractions__n2, gas_analysis_reports.report_url_clean,
       gas_analysis_reports.comments]
     sorts: [gas_analysis_reports.report_url_clean]
     limit: 500
