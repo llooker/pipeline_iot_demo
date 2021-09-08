@@ -823,7 +823,7 @@
     target_gap: 10
     target_weight: 25
     range_min: 0
-    range_max: 100
+    range_max: 30
     value_label_type: dboth
     value_label_font: 9
     value_label_padding: 45
