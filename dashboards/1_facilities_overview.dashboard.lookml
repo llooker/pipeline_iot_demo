@@ -386,14 +386,14 @@
     series_labels: {}
     show_view_names: false
     arm_length: 7
-    arm_weight: 32
-    spinner_length: 129
-    spinner_weight: 12
+    arm_weight: 43
+    spinner_length: 184
+    spinner_weight: 33
     target_length: 10
     target_gap: 10
     target_weight: 25
     range_min: 0
-    range_max: 0
+    range_max: 100
     value_label_type: dboth
     value_label_font: 9
     value_label_padding: 45
@@ -445,6 +445,146 @@
     totals_color: "#808080"
     defaults_version: 0
     series_types: {}
+    query_fields:
+      measures:
+      - align: right
+        can_filter: true
+        category: measure
+        default_filter_value:
+        description: Number of Days Ago
+        enumerations:
+        field_group_label: Device Inspection
+        fill_style:
+        fiscal_month_offset: 0
+        has_allowed_values: false
+        hidden: false
+        is_filter: false
+        is_numeric: true
+        label: Devices Days Since Last Inspection
+        label_from_parameter:
+        label_short: Days Since Last Inspection
+        map_layer:
+        name: sensors.days_since_last_inspection
+        strict_value_format: false
+        requires_refresh_on_sort: false
+        sortable: true
+        suggestions:
+        tags: []
+        type: average_distinct
+        user_attribute_filter_types:
+        - number
+        - advanced_filter_number
+        value_format:
+        view: sensors
+        view_label: Devices
+        dynamic: false
+        week_start_day: monday
+        dimension_group:
+        error:
+        field_group_variant: Days Since Last Inspection
+        measure: true
+        parameter: false
+        primary_key: false
+        project_name: pipeline_iot
+        scope: sensors
+        suggest_dimension: sensors.days_since_last_inspection
+        suggest_explore: measurements
+        suggestable: false
+        is_fiscal: false
+        is_timeframe: false
+        is_turtle: false
+        can_turtle: false
+        turtle_dimension:
+        can_time_filter: false
+        time_interval:
+        lookml_link: "/projects/pipeline_iot/files/views%2Fsensors.view.lkml?line=169"
+        permanent:
+        source_file: views/sensors.view.lkml
+        source_file_path: pipeline_iot/views/sensors.view.lkml
+        sql: "${last_inspection}"
+        sql_case:
+        filters:
+        sorted:
+          desc: true
+          sort_index: 0
+      dimensions:
+      - align: left
+        can_filter: true
+        category: dimension
+        default_filter_value:
+        description:
+        enumerations:
+        field_group_label:
+        fill_style:
+        fiscal_month_offset: 0
+        has_allowed_values: false
+        hidden: false
+        is_filter: false
+        is_numeric: false
+        label: Devices Device ID
+        label_from_parameter:
+        label_short: Device ID
+        map_layer:
+        name: sensors.sensor_id_clean
+        strict_value_format: false
+        requires_refresh_on_sort: false
+        sortable: true
+        suggestions:
+        tags: []
+        type: string
+        user_attribute_filter_types:
+        - string
+        - advanced_filter_string
+        value_format:
+        view: sensors
+        view_label: Devices
+        dynamic: false
+        week_start_day: monday
+        dimension_group:
+        error:
+        field_group_variant: Device ID
+        measure: false
+        parameter: false
+        primary_key: false
+        project_name: pipeline_iot
+        scope: sensors
+        suggest_dimension: sensors.sensor_id_clean
+        suggest_explore: measurements
+        suggestable: true
+        is_fiscal: false
+        is_timeframe: false
+        is_turtle: false
+        can_turtle: false
+        turtle_dimension:
+        can_time_filter: false
+        time_interval:
+        lookml_link: "/projects/pipeline_iot/files/views%2Fsensors.view.lkml?line=14"
+        permanent:
+        source_file: views/sensors.view.lkml
+        source_file_path: pipeline_iot/views/sensors.view.lkml
+        sql: |-
+          CASE
+                   WHEN ${sensor_id} LIKE '%M-8620%' THEN 'M-8620'
+                   WHEN ${sensor_id} LIKE '%M-8610%' THEN 'M-8610'
+                   WHEN ${sensor_id} LIKE '%M-7762%' THEN 'M-7762'
+                   WHEN ${sensor_id} LIKE '%M-7752%' THEN 'M-7752'
+                   WHEN ${sensor_id} LIKE '%M-1220-C4%' THEN 'M-1220-C4' ELSE 'Other' END
+        sql_case:
+        filters:
+      table_calculations:
+      - label: Days Remaining
+        name: days_remaining
+        expression: 30-${sensors.days_since_last_inspection}
+        can_pivot: true
+        sortable: true
+        type: number
+        align: right
+        measure: true
+        is_table_calculation: true
+        dynamic: true
+        value_format:
+        is_numeric: true
+      pivots: []
     listen:
       Facility Name: paths.facility_name
       Device ID: sensors.sensor_id_clean
